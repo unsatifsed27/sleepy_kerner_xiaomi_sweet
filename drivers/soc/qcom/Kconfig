@@ -1077,6 +1077,9 @@ config QTI_CRYPTO_COMMON
 	 encryption. This library implements API to program and evict
 	 keys using Trustzone or Hardware Key Manager.
 
+config STATE_NOTIFIER
+    bool "State Notifier"
+
 config QTI_CRYPTO_TZ
 	tristate "Enable Trustzone to be used for FBE"
 	depends on QTI_CRYPTO_COMMON
