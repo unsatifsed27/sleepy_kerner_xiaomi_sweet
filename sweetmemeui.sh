@@ -200,7 +200,7 @@ KERVER=$(make kernelversion)
                 echo -e "$yellow << making kernel zip >> \n $white"
                 cp -r "$IMG" zip/
                 cd zip
-                mv Image.gz-dtb zImage
+                mv Image.gz zImage
                 export ZIP="$KERNEL_NAME"-"$KRNL_REL_TAG"-"$CODENAME"-"$DATE"
                 zip -r9 "$ZIP" * -x .git README.md LICENSE *placeholder
                 curl -sLo zipsigner-3.0.jar https://raw.githubusercontent.com/shashank1439/anykernel/zipper/zipsigner-3.0.jar
