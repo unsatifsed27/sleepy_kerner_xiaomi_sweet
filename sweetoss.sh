@@ -155,6 +155,9 @@ Diff=$(($End - $Start))
 
 export IMG="$MY_DIR"/out/arch/arm64/boot/Image.gz
 
+# OSS stuff
+git cherry-pick e349d4d92a79ba33039610867a882a9276125669
+
 # Let's start
 
 echo -e "$green << doing pre-compilation process >> \n $white"
